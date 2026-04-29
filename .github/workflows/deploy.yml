@@ -43,6 +43,7 @@ jobs:
             echo "AWS_REGION=us-east-1" >> backend/.env
             echo "S3_BUCKET_NAME=miniwetransfer-uploads-nilad-demo-123" >> backend/.env
             echo "DYNAMODB_TABLE_NAME=MiniWeTransferFiles" >> backend/.env
+            echo "SES_SENDER_EMAIL=niladrirah@gmail.com" >> backend/.env
 
             sudo docker-compose down || true
             sudo docker-compose up -d --build
